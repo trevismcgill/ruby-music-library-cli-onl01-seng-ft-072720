@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 module Concerns::Findable
 
+=======
+module Findable
+>>>>>>> 223f273ed01702de9b52eea9c6f68bc4add6c06c
 
   def save
     @@all << self

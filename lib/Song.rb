@@ -40,6 +40,7 @@ def self.find_by_name(name)
   self.all.detect {|song| song.name == name}
 end
 
+<<<<<<< HEAD
 # def self.create(name)
 #   song = Song.new(name)
 #   song.save
@@ -59,6 +60,16 @@ end
 
 def self.create_from_filename(filename)
   new_from_filename(filename).save
+=======
+def self.create(name)
+  song = Song.new(name)
+  song.save
+  song
+end
+
+def self.find_or_create_by_name(name)
+  find_by_name(name) == nil ? create(name) : find_by_name(name)
+>>>>>>> 223f273ed01702de9b52eea9c6f68bc4add6c06c
 end
 
 def self.all

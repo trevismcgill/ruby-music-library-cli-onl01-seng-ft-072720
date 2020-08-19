@@ -24,10 +24,16 @@ end
 def add_song(song)
   if !@songs.include?(song)
     @songs << song
+<<<<<<< HEAD
     # binding.pry
   if song.artist != self
     song.artist = self
   end
+=======
+      if song.artist != self
+        song.artist = self
+      end
+>>>>>>> 223f273ed01702de9b52eea9c6f68bc4add6c06c
   end
 end
 
@@ -44,11 +50,19 @@ def self.destroy_all
   @@all.clear
 end
 
+<<<<<<< HEAD
 # def self.create(name)
 #   artist = Artist.new(name)
 #   artist.save
 #   artist
 # end
+=======
+def self.create(name)
+  artist = Artist.new(name)
+  artist.save
+  artist
+end
+>>>>>>> 223f273ed01702de9b52eea9c6f68bc4add6c06c
 
 
 end
